@@ -1,0 +1,40 @@
+.parent-box{
+    height: 500px;
+    width: 500px;
+    background-color: aliceblue;
+    box-shadow:3px 3px 5px;
+    position: relative;
+    margin: 100px;
+    border:2px solid beige;
+    border-radius: 10%;
+}
+.child-box{
+    height: 50px;
+    width:50px;
+    border: 2px solid red;
+    background-color: aqua;
+    border-radius: 10%;
+    margin:20px;
+    /* position: absolute; */
+    animation-name: rotating;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-delay:0.05s;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+@keyframes rotating {
+    0%{left:20px;top: 20px;}
+    25%{left:430px;top: 20px;}
+    50%{left:430px;top: 430px;}
+    75%{left:20px;top:430px;}
+    100%{left:20px;top: 20px;}
+
+
+}
+/* .child-box:hover{
+    animation-name: rotating;
+    
+} */
+
+
